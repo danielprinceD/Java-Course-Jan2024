@@ -5,22 +5,22 @@ public class collatz_program {
         int num,i=1,count=0;
         Scanner s = new Scanner(System.in);
         num = s.nextInt();
-        System.err.print(num + " ");
+        System.err.println(num + " ");
         while(num > 1)
         {
             if(num%2 == 0)
             {
                 num/=2;
-                System.err.print(num + " "); count++;
+                System.err.println(num + " "); count++;
                 continue;
             }
             if(num%2 !=0)
             {
                 num = 3*num + 1;
-                System.err.print(num + " ");count++;
+                System.err.println(num + " ");count++;
                 continue;
             }
         }
-        System.out.print(count);
+        System.out.println(count);
     }
 }
