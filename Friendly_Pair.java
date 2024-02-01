@@ -13,6 +13,6 @@ public class Friendly_Pair {
         if(div1/num1 == div2/num2)
             System.out.println("Friendly Pair");
         else
-            System.out.println("Friendly Pair");
+            System.out.println("Not Friendly Pair");
     }
 }
