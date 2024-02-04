@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class Main
   {
     public static void main(String args[])
@@ -17,11 +17,11 @@ public class Main
       switch(mon)
         {
           case 1:
-          case 3:  
-          case 5:  
-          case 7:  
-          case 8:  
-          case 10:  
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
           case 12:
             System.out.print("Number of days is 31");
             break;
