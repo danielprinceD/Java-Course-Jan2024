@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class bubble_sort
 {
     static void bubble_sorting(int arr[],int n)
