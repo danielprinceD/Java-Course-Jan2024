@@ -1,8 +1,9 @@
+import java.util.Scanner;
 public class insert_sort {
     static void insertion_sort(int []arr,int n)
     {
         int key,j;
-        for(int i=0;i<n;i++)
+        for(int i=1;i<n;i++)
         {
             key = arr[i];
             j = i-1;
@@ -15,7 +16,10 @@ public class insert_sort {
         }
     }
     public static void main(String[] args) {
-        int arr[] = {2,4,8,2,6,3};
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int[] arr = new int[size];
+        for(int i=0;i<size;i++)arr[i] = s.nextInt();
         insertion_sort(arr,arr.length);
         for(int i : arr)
             System.out.print(i+ " ");
