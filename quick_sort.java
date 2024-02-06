@@ -10,8 +10,8 @@ public class quick_sort {
     static int partition(int arr[],int start , int end)
     {
         int pivot = arr[end];
-        int pivot_index = -1;
-        for(int i=0;i<arr.length;i++)
+        int pivot_index = start-1;
+        for(int i=start;i<=end;i++)
         {
             if( arr[i] < pivot)
                 swap(arr, i, ++pivot_index);
