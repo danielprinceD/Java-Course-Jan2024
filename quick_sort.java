@@ -11,7 +11,7 @@ public class quick_sort {
     {
         int pivot = arr[end];
         int pivot_index = start-1;
-        for(int i=start;i<=end;i++)
+        for(int i=start;i<end;i++)
         {
             if( arr[i] < pivot)
                 swap(arr, i, ++pivot_index);
