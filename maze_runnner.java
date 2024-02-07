@@ -1,47 +1,21 @@
+import java.util.Scanner;
+
 class maze_runer
 {
-    static void horizontal(int i,int j)
+    static void maze_runner_solver(int cr ,int cc,int fr,int fc,String ans)
     {
-        if(j < 2)
-        {
-            System.out.print("H");
-            horizontal(i, j+1);
-        }
-        else if(i < 2)
-        {
-            System.out.print("V");
-            vertical(i+1, j);
-
-        }
-        else
-        return;
-        }
-    static void vertical(int i,int j)
-    {
-        if(i < 2){
-            System.out.print("V");
-            vertical(i+1, j);
-        }
-        else if(j < 2)
-        {
-            System.out.print("H");
-            horizontal(i, j+1);
-        }
-        else return;
-    }
-    static void maze(int i,int j, int time)
-    {
-        if(i <= 2 && j < 2)
-        {
-            horizontal(i,j+1);
-            System.out.print("H");
-            System.out.println();
-            vertical(i+1,j);
-            System.out.print("V");
-        }
-        
+        if(cr > fr || cc > fc)return;
+        if(cr == fr && cc == fc ) System.out.println(ans);
+        maze_runner_solver(cr+1, cc, fr, fc, ans+"H");
+        maze_runner_solver(cr, cc+1, fr, fc, ans+"V");
     }
     public static void main(String[] args) {
-        maze(0,0 , 2);
+        Scanner s = new Scanner(System.in);
+        int cr,cc,fr,fc;
+        cr = s.nextInt();
+        cc = s.nextInt();
+        fr = s.nextInt();
+        fc = s.nextInt();
+        maze_runner_solver(cr ,cc ,fr,fc,"");
     }
 }
