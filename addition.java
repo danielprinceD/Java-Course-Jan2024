@@ -1,5 +1,5 @@
 import java.util.*;
-class Main
+class addition
   {
     public static void main(String args[])
     {
