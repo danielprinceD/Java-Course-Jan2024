@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class binary_search {
+public class binary_search_ {
 
   static int binary(int arr[] ,int start,int end,int ele)
   {
