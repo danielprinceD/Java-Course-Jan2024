@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class Person {    
-    String name;int age;   
+    String name;int age; 
     Person()
     {
     Scanner s = new Scanner(System.in);
