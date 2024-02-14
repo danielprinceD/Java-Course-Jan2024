@@ -40,7 +40,5 @@ public class shape_inherit {
         c.show_area();
         Rectangle r = new Rectangle(20, 10);
         r.show_area();
-
-
     }
 }
