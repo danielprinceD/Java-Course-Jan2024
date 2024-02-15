@@ -61,10 +61,10 @@ public class Roll_Num {
         s[i].calculate();
       }
           
-    for(int i=0;i<n;i++)System.err.println(s[i].tot);
-    System.err.println(Student.m1_roll + " " +  Student.first_m1 );
-    System.err.println(Student.m2_roll +" " +  Student.first_m2 );  
-    System.err.println(Student.m3_roll + " " + Student.first_m3 );   
-    System.err.println( Student.h_roll + " " +Student.h_tot);   
+    for(int i=0;i<n;i++)System.out.println(s[i].tot);
+    System.out.println(Student.m1_roll + " " +  Student.first_m1 );
+    System.out.println(Student.m2_roll +" " +  Student.first_m2 );  
+    System.out.println(Student.m3_roll + " " + Student.first_m3 );   
+    System.out.println( Student.h_roll + " " +Student.h_tot);   
   }
 }
