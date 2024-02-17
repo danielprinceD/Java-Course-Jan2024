@@ -38,6 +38,14 @@ public class Multi_Threading {
         Thread1 t1 = new Thread1(p);
         Thread2 t2 = new Thread2(p);
         t1.start();
+        try{
+
+            t1.join();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
         t2.start();
     }
 }
