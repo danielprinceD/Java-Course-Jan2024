@@ -1,21 +1,4 @@
-package Trees;
-
 import java.util.Scanner;
-
-class Node
-{
-    int data;
-    Node left,right;
-    Node(int data)
-    {
-        this.data = data;
-        this.left = this.right = null;
-    }
-}
-class BST
-{
-    Node root;
-    BST()
     {
         this.root = null;
     }
@@ -55,7 +38,7 @@ class BST
         }
     }
 }
-public class insert {
+public class Main {
     public static void main(String[] args) {
     BST bst = new BST();
     Scanner s = new Scanner(System.in);
@@ -66,7 +49,11 @@ public class insert {
         bst.insert(val);
         val = s.nextInt();
     }
+System.out.println("Tree values are:");
+
     bst.display();
+System.out.print("  ");
+
 }
     
 }
